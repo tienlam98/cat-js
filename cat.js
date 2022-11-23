@@ -7,6 +7,8 @@ fetch(api)
   .then((data) => {
     for (let i = 0; i <= 67; i++) {
       let img = document.createElement("img");
+      let btn = document.getElementsByTagName("button");
+      btn.innerHTML ="abc";
       img.src = data[i].image.url;
       img.classList.add("item");
       img.innerHTML.add = data[i].name;
